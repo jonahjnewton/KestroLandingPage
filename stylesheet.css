@@ -1,0 +1,66 @@
+body{
+    margin:0; 
+    height:100%;
+}
+
+#pageBg{
+    background-color :#369aff;
+    background-size: 300%;
+    background-position:center;
+    height:100%;
+}
+
+.center_container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.center_inner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo{
+    max-width: 500px; margin: 0; margin-bottom: 1em;
+    font-size: 40px;
+    font-family: Brandon Regular, sans-serif;
+    color:white;
+}
+
+#socials{
+    text-align: center;
+}
+
+.social{
+    width:35px;
+    vertical-align: middle;
+    padding:6px;
+    fill:white;
+    transition: fill 0.3s;
+        
+}
+
+a{
+    text-decoration: none;
+    font-family: Brandon Regular, sans-serif;
+    
+}
+
+.social:hover, .social:focus{
+    fill: lightgray;
+    
+}
+
+#emaillink{
+    text-decoration: none;
+    color:white;
+    transition: color 0.3s;
+}
+
+#emaillink:hover, #emaillink:focus{
+    color:lightgray;
+}
