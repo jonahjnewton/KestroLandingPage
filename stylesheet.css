@@ -81,6 +81,10 @@ a{
     transition: 0.3s;
 }
 
+#mc-field-group{
+    text-align: center;
+}
+
 #mc-embedded-subscribe:hover, #mc-embedded-subscribe:focus{
     background-color: lightgray;
 }
@@ -89,8 +93,12 @@ a{
     text-align: center; color:white; padding:1vw;
 }
 
+#mc-field-group{
+    text-align:center;
+}
+
 #mce-FNAME, #mce-EMAIL{
-        margin-top: 1vw; width:20em  ; height:2em; font-family: Brandon Regular, sans-serif; display:block;
+        margin-top: 1vw; width:20em  ; height:2em; font-family: Brandon Regular, sans-serif; display:flex;
 }
 
 #mce-EMAIL{
