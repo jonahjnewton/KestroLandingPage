@@ -4,10 +4,18 @@ body{
 }
 
 #pageBg{
-    background-color :#369aff;
+    
+    background :linear-gradient(to right,#0a68c6, #369aff,#67b3ff);
     background-size: 300%;
     background-position:center;
     height:100%;
+    animation: bgAnim 5s alternate infinite;
+}
+
+@keyframes bgAnim {
+   0%{ background-position:left;}
+   100%{background-position: right;}
+    
 }
 
 .center_container{
