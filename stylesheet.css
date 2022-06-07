@@ -106,7 +106,7 @@ a{
 }
 
 #mce-FNAME, #mce-EMAIL{
-        margin-top: 1vw; width:20em  ; height:2em; font-family: Brandon Regular, sans-serif; display:flex;
+        margin-top: 1vw; width:20em; height:2em; font-family: Brandon Regular, sans-serif; display:block; margin-left: auto; margin-right: auto;
 }
 
 #mce-EMAIL{
