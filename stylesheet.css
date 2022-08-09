@@ -1,15 +1,16 @@
 body{
     margin:0; 
     height:100%;
-}
-
-#pageBg{
-    
     background :linear-gradient(to right,#0a68c6, #369aff,#67b3ff);
     background-size: 300%;
     background-position:center;
     height:100%;
     animation: bgAnim 5s alternate infinite;
+}
+
+#pageBg{
+    height: 100%;
+    
 }
 
 @keyframes bgAnim {
@@ -19,11 +20,7 @@ body{
 }
 
 .center_container{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%)
+    padding: 2rem 0;
 }
 
 .center_inner{
@@ -98,7 +95,7 @@ a{
 }
 
 #mc_embed_signup_scroll{
-    text-align: center; color:white; padding:1vw;
+    text-align: center; color:white; padding:1rem;
 }
 
 #mc-field-group{
@@ -106,9 +103,42 @@ a{
 }
 
 #mce-FNAME, #mce-EMAIL{
-        margin-top: 1vw; width:20em; height:2em; font-family: Brandon Regular, sans-serif; display:block; margin-left: auto; margin-right: auto;
+        margin-top: 1rem; width:20em; height:2em; font-family: Brandon Regular, sans-serif; display:block; margin-left: auto; margin-right: auto;
 }
 
 #mce-EMAIL{
-    margin-bottom: 1vw;
+    margin-bottom: 1rem;
+}
+
+.faq-question{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.faq-button{
+    margin: 0.6rem;
+    cursor: pointer;
+}
+
+.faq-content{
+    margin: 0 auto;
+    margin-bottom: 0.6rem;
+    width: 50%;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+}
+
+.faq-button:after{
+    content: " +";
+}
+
+.active:after{
+    content:" -";
+}
+
+hr{
+    width:25%;
+    border: 1px solid white;
 }
