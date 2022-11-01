@@ -25,6 +25,7 @@ body{
 
 .center_inner{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -74,12 +75,12 @@ a{
     font-size: 30px;
 }
 
-#mc-embedded-subscribe{
+.button{
     font-family: Brandon Regular, sans-serif; 
     background-color: white;
     border: none;
     color: black;
-    padding: 16px 32px;
+    padding: 1rem 2rem;
     text-align: center;
     font-size: 16px;
     margin: 4px 2px;
@@ -90,7 +91,7 @@ a{
     text-align: center;
 }
 
-#mc-embedded-subscribe:hover, #mc-embedded-subscribe:focus{
+.button:hover, .button:focus{
     background-color: lightgray;
 }
 
@@ -114,7 +115,7 @@ a{
     text-align: center;
     display: flex;
     flex-direction: column;
-    width:50%;
+    width:33%;
     border: solid 2px white;
     margin-bottom: 1rem;
     
@@ -150,8 +151,15 @@ h1{
     margin-bottom:0.6rem;
 }
 
+@media (max-width: 1024px) {
+    .faq-question{
+        width:50%;
+    }
+  }
+
 @media (max-width: 768px) {
     .faq-question{
         width:75%;
     }
   }
+  
